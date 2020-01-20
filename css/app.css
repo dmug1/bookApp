@@ -1,0 +1,82 @@
+/* color pallete*/
+.lapis-azul-color {color:#247BA0} /*LAPIS LAZULI*/
+.green-sheen-bg-color {color:#70C1B3} /*GREEN SHEEN*/
+.sea-green-color {color:#B2DBBF}  /*SEA FOAM GREEN*/
+.pale-yellow-bg-color{color:#F3FFBD}  /*VERY PALE YELLOW*/
+.awesome-color{color:#FF1654}  /*AWESOME*/
+.padding-top-100px{padding-top: 100px;}
+.margin-bottom-25px{margin-bottom: 25px;}
+.safire-blue-color{color:#0068A0 !important}
+/************************
+*
+* style search page
+*
+*************************/
+#searchContainer{
+    background-color: #247BA0;
+    height: 100vh;
+}
+
+.search-form {
+    width: auto;
+    margin: 0 auto;
+}
+
+.search-form .hint-text{
+    color:#fff;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.form-control, .btn{
+    min-height: 38px;
+    border-radius: 8px;
+}
+
+.search-btn {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.social-btn{
+    
+}
+
+.input-group{
+    background-color:#247BA0;
+    color:#F3FFBD;
+    border: 2px solid #F3FFBD;
+    border-radius: 8px;
+}
+
+.input-group input:: placeholder{
+    color: #fff;
+    background-color: #247BA0;
+    font-size: 1em;
+}
+
+.input-group-addon .fa{
+    font-size: 18px;
+    padding:10px;
+}
+
+.form-group{
+    margin-bottom: 1rem;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+.btn-success,
+.btn-success:hover{
+    height: 42px;
+    color:#247BA0;
+    background-color:rgb(3, 57, 80);
+    border: 2px solid #F3FFBD;      
+}
+.btn-primary:focus{
+    background-color:rgb(10, 9, 61) !important;
+}
+
+.no-hover{
+    pointer-events: none;
+}
