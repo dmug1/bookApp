@@ -3,6 +3,7 @@
 import urllib.request
 import json
 import textwrap
+import sys
 #from flask import Flask
 #from flask import request
 
@@ -16,8 +17,9 @@ bookSearch = ""
 #    else:
 #        bookSearch = 'Invalid book'
 
-bookSearch = input("qual livro?")
+#bookSearch = input("qual livro?")
 #with urllib.request.urlopen("https://www.googleapis.com/books/v1/volumes?q=isbn:1408865262") as f:
+bookSearch = "Dom Casmurro"
 bookSearch = bookSearch.replace(" ","%20")
 
 urlContainer = "https://www.googleapis.com/books/v1/volumes?q=" + bookSearch
@@ -25,11 +27,15 @@ urlContainer = "https://www.googleapis.com/books/v1/volumes?q=" + bookSearch
 print(urlContainer)
 
 #with urllib.request.urlopen("https://www.googleapis.com/books/v1/volumes?q=harry%20potter") as f:
-with urllib.request.urlopen(urlContainer) as f:
-    text = f.read()
-    decodedtext = text.decode('utf-8')
-    print(textwrap.fill(decodedtext, width=50))
-
+try:
+    with urllib.request.urlopen(urlContainer) as f:
+        text = f.read()
+        decodedtext = text.decode('utf-8')
+        print(textwrap.fill(decodedtext, width=50))
+except Exception as ec:
+    print("Connection error, could not reach Google API: %s" %str(ec))
+    sys.exit()
+    
 print()
 
 obj = json.loads(decodedtext)

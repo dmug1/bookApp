@@ -1,0 +1,11 @@
+{
+ "kind": "books#volumes",
+ "totalItems": 0,
+ "items": [
+  {
+   "searchInfo": {
+    "textSnippet": "Could not retrieve book's info"
+   }
+  }
+ ]
+}
