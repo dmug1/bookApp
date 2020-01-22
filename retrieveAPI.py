@@ -34,7 +34,7 @@ try:
         print(textwrap.fill(decodedtext, width=50))
 except Exception as ec:
     print("Connection error, could not reach Google API: %s" %str(ec))
-    sys.exit()
+
     
 print()
 
