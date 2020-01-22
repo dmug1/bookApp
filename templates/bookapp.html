@@ -34,7 +34,12 @@
             
             {%block info%}
             <div class="retrieved-info">
-                            
+                {% if bookInfo|length %}
+                    <p class="paragraph-info">{{bookInfo}}</p>
+                {% else %}
+                    <div>  </div>
+                {% endif %}
+                         
             </div>   
             {%endblock%}
 

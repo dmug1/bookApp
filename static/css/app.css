@@ -80,3 +80,16 @@
 .no-hover{
     pointer-events: none;
 }
+
+.retrieved-info{
+    margin-bottom: 1rem;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+.paragraph-info{
+    background-color:#247BA0;
+    color:#F3FFBD;
+    border: 2px solid #F3FFBD;
+    border-radius: 8px;
+}
