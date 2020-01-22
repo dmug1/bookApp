@@ -8,4 +8,4 @@ Main page complete, only used CSS, HTML and bootstrap. Next steps is to retrieve
 Added python script to fetch rest data from google.
 
 
-![Alt text](sample.jpg?raw=true "Main page")
+![](main.gif)
